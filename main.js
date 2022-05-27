@@ -1,3 +1,4 @@
+//changing images on click
 function changeImage1() {
     var image = document.getElementById('testimage');
     if (image.src.match("spring")) {

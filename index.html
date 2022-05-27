@@ -27,11 +27,11 @@
 
     body{
         margin: 0;
-        background-image: url(img/background.jpg);
+        background-image: url(img/backgroun.jpg);
         background-repeat: no-repeat, repeat;
         background-size: cover; /* Resize the background image to cover the entire container */
-        
-        background-color: white;
+        /*box-shadow: inset 0 0 20vmin 0 #585247;}*/
+        align-items: center;
 
     }
     ul{
@@ -45,6 +45,7 @@
 <body>
     <header>
         <nav class="navbar">
+
             <ul class="nav-logotype">
                 <img href="#" class="nav-logo">
                 <div class="vl"></div>
@@ -66,33 +67,80 @@
         </nav>
         <hr size="2" height="10px" color="black">
     </header>
-    <section class="featured">
 
-        <div class="featured-text">
-            <p class="featured-inspired">Get inspired</p>
-                <hr width="90%">
-            <p id="inspiration">Wedding inspiration</p>    
-            <p class="inspired">loremipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit culpa facere temporibus animi debitis iusto magni esse officia obcaecati, saepe ea a modi odio cumque, vitae accusantium. Officia, ipsa!</p>     
+    <section class="featured-container">
+
+        <div class="featured">
+            <div class="featured-text">
+                <p class="featured-inspired">Get inspired</p>
+                    <hr width="90%">
+                <p id="inspiration">Wedding inspiration</p>    
+                <p class="inspired">loremipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit culpa facere temporibus animi debitis iusto magni esse officia obcaecati, saepe ea a modi odio cumque, vitae accusantium. Officia, ipsa!</p>     
+            <button class="button-28">Show more</button>
+            </div>
+            <video autoplay muted loop id="video-cemerica">
+                <source src="video/video-cemerica.mp4" type="video/mp4">
+            </video>
         </div>
-
-        <img class="featured-img" src="./img/featured.jpg"></img>
 
     </section>
 
+
+
     <section class="programs">
+
         <div class="prgtxtcnt">
-            <p id="ourprograms">Our programs</p>
+            <div></div>
+            <div class="prg-cnt">
+                <p id="ourprograms">Our programs</p>
+                <hr width="90%">   
+            </div>
+            <button class="info-button">more info</button>
+            
         </div>
             
             <div class="programs-container">
-                <img src="img/program1.jpg" alt="">
-                <img src="img/program2.jpg" alt="">
-                <img src="img/program3.jpg" alt="">
-
+                <div class="prog-it-cont">
+                    <img src="img/program1.jpg" alt="">
+                    <p class="title1">Complete program</p>
+                    <hr width="70%">
+                </div>
+                <div class="prog-it-cont">
+                    <img src="img/program2.jpg" alt="">
+                    <p class="title1">Partial program</p>
+                    <hr width="70%">
+                </div>
+                <div class="prog-it-cont">
+                    <img src="img/program3.jpg" alt="">
+                    <p class="title1">Base program</p>
+                    <hr width="70%">
+                </div>
             </div>
-        
 
+    </section>
 
+    <section class="chooseus-container">
+        <div class="chooseus-color">
+
+        <div class="chooseus-nav-cont">
+            <div class="chooseus-head">
+                <p class="headstyle1">Why choose us</p>
+                <hr width="90%"> 
+            </div>
+            <div class="chooseus-nav">
+                <p class="title1">Our mindset</p>
+                <p class="title1">Our workplace</p>
+                <p class="title1">Our partners</p>
+            </div>
+        </div>
+
+        <div class="chooseus-content">
+            <p class="text-cont">loremipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit culpa facere temporibus animi debitis iusto magni esse officia obcaecati, saepe ea a modi odio cumque, vitae accusantium. Officia, ipsa!</p>     
+            <img class="featured-img" src="./img/"></img>
+        </div>
+
+        </div>
+           
     </section>
 
 
@@ -123,10 +171,10 @@
         <button id="but4" onclick="changeImage4()" value="Change">winter</button>
 
         <div id="season-box">
-            <div id="spring" class="season"></div>
-            <div id="summer" class="season"></div>
-            <div id="autum" class="season"></div>
-            <div id="winter" class="season"></div>
+            <div id="spring" onclick="changeImage1()" class="season" ></div>
+            <div id="summer" onclick="changeImage2()" class="season"></div>
+            <div id="autum" onclick="changeImage3()" class="season"></div>
+            <div id="winter" onclick="changeImage4()" class="season"></div>
         </div>
 
     </section>
@@ -136,3 +184,4 @@
     
     <script src="main.js"></script>
 </body>
+

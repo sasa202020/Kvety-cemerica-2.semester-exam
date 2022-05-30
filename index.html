@@ -27,9 +27,10 @@
 
     body{
         margin: 0;
-        background-image: url(img/backgroun.jpg);
+        background-image: url(img/background.jpg);
         background-repeat: no-repeat, repeat;
-        background-size: cover; /* Resize the background image to cover the entire container */
+        background-size:200%;
+        /*background-size: cover; /* Resize the background image to cover the entire container */
         /*box-shadow: inset 0 0 20vmin 0 #585247;}*/
         align-items: center;
 
@@ -43,7 +44,7 @@
 
 
 <body>
-    <!-- navigation bar-->
+    <!-- navigation bar-desktop -->
     <header>
         <nav class="navbar">
 
@@ -56,18 +57,25 @@
             </ul>
 
             <ul class="nav-menu">  
-                <li class="nav-item">
+                <li class="nav-item-desk">
                     <a class="nav-link" href="" class="nav-link">Wedding plans</a>
                 </li>
                 <div class="vl"></div>
-                <li class="nav-item">
+                <li class="nav-item-desk">
                     <a class="nav-link"href="" class="nav-link">Bouquetes</a>
                 </li>
-               
+                <li class="nav-mobile">
+                    <a class="nav-link"href="" class="nav-link">More</a>
+                </li>
             </ul>
         </nav>
+
         <hr size="2" height="10px" color="black">
+
     </header>
+
+    
+
  <!-- featured-->
     <section class="featured-container">
 
@@ -79,15 +87,32 @@
                 <p class="inspired">loremipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit culpa facere temporibus animi debitis iusto magni esse officia obcaecati, saepe ea a modi odio cumque, vitae accusantium. Officia, ipsa!</p>     
             <button class="button-28">Show more</button>
             </div>
-            <video autoplay muted loop id="video-cemerica">
+            <div class="videoframe">
+                <video autoplay muted loop id="video-cemerica">
+                    <source src="video/video-cemerica.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="featured-mobile">
+            <video autoplay muted loop id="video-cemerica-mobile">
                 <source src="video/video-cemerica.mp4" type="video/mp4">
             </video>
+            
+            <div class="featured-text">
+                <p class="featured-inspired">Get inspired</p>
+                    <hr width="90%">
+                <p id="inspiration">Wedding inspiration</p>    
+                <p class="inspired">loremipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam reprehenderit culpa facere temporibus animi debitis iusto magni esse officia obcaecati, saepe ea a modi odio cumque, vitae accusantium. Officia, ipsa!</p>     
+            </div>
+
         </div>
 
     </section>
 
+   
 
-        <!-- promgrammes-->
+<!-- promgrammes-->
     <section class="programs">
 
         <div class="prgtxtcnt">
@@ -101,27 +126,54 @@
         </div>
             
             <div class="programs-container">
+
                 <div class="prog-it-cont">
-                    <img src="img/program1.jpg" alt="" class="whitePlus">
-                    <div class="middle"></div>
-                    <img src="/img/plus.png" alt="">
-                    <p class="title1">Complete program</p>
-                    <hr width="70%">
+                    <div class="prog-img">
+                        <img src="img/program1.jpg" alt="" class="program-img">
+                        <p class="title1">Complete program</p>
+                        <hr width="70%">
+                    </div>
+
+                    <div class="prog-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Laborum nesciunt omnis nihil iste repudiandae,
+                       </p>
+                    </div>
+
                 </div>
+
                 <div class="prog-it-cont">
-                    <img src="img/program2.jpg" alt="" class="whitePlus">
-                    <p class="title1">Partial program</p>
-                    <hr width="70%">
+                    <div class="prog-img">
+                        <img src="img/program2.jpg" alt="" class="whitePlus">
+                        <p class="title1">Partial program</p>
+                        <hr width="70%">
+                    </div>
+
+                    <div class="prog-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Laborum nesciunt omnis nihil iste repudiandae,
+                       </p>
+                    </div>
                 </div>
+
                 <div class="prog-it-cont">
-                    <img src="img/program3.jpg" alt="" class="whitePlus">
-                    <p class="title1">Base program</p>
-                    <hr width="70%">
+                    <div class="prog-img">
+                        <img src="img/program3.jpg" alt="" class="whitePlus">
+                        <p class="title1">Base program</p>
+                        <hr width="70%">
+                    </div>
+
+                    <div class="prog-description">
+                        <p>Lorem, ipsum dolor sit amet consectetur
+                        adipisicing elit. Laborum nesciunt omnis nihil iste repudiandae,
+                       </p>
+                    </div>
                 </div>
             </div>
 
     </section>
 
+     <!-- choose us-->
     <section class="chooseus-container">
         <div class="chooseus-color">
 
@@ -146,20 +198,7 @@
     </section>
 
 
-    <section class="wheel">
-        
-        <span><span></span></span>
-        <div class="wrap">
-            <a class="wlink" href="#"><div></div></a>
-            <a class="wlink" href="#"><div></div></a>
-            <a class="wlink" href="#"><div></div></a>
-            <a class="wlink" href="#"><div></div></a>
-            <a id="imgClickAndChange" class="wlink" href="#"><div></div></a>
-        </div>
-
-    </section>
-
-    
+    <!--
     <section class="test">
 
         <img id="testimage" src="img/featured.jpg">
@@ -177,6 +216,31 @@
         </div>
 
     </section>
+    -->
+
+    <footer class="footer">
+        <p class="headstyle2">Contact</p>
+        <p class="headstyle2">More of our work</p>
+        <p class="headstyle2">About us</p>
+
+        <div class="footercontent">
+            <p class="text-cont2">tel</p>
+            <p class="text-cont2">kvetycemerica@gmail.com</p>
+            <p class="text-cont2">Priehradná 1875/4, Zubrohlava</p>
+        </div>
+
+        <div class="footercontent">
+            <img class="socialicon" src="img/fb">
+            <img class="socialicon" src="img/insta">
+            <img class="socialicon" src="img/pin">
+        </div>
+
+        <div class="footercontent">
+            <p class="text-cont2">Privacy policy</p>
+            <p class="text-cont2">How it works</p>
+        </div>
+        
+    </footer>
     
 
   

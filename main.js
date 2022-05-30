@@ -38,3 +38,12 @@ function changeImage4() {
         image.src = "img/winter.png";
     }
 }
+// choose us 3 ailes 
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.style.display === "none") {
+    x.style.display = "";
+  } else {
+    x.style.display = "none";
+  }
+}

@@ -40,10 +40,33 @@ function changeImage4() {
 }
 // choose us 3 ailes 
 function myFunction(id) {
+    var a = document.getElementById(1);
+    var b = document.getElementById(2);
+    var c = document.getElementById(3);
+
+  a.style.display = "none";
+  b.style.display = "none";
+  c.style.display = "none";
+
   var x = document.getElementById(id);
-  if (x.style.display === "none") {
     x.style.display = "";
-  } else {
-    x.style.display = "none";
-  }
 }
+function hideOptions(){
+    var b = document.getElementById(2);
+    var c = document.getElementById(3);
+
+    b.style.display = "none";
+    c.style.display = "none";
+}
+//scroll down button                      thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
+var scrollToTopBtn = document.getElementById("downButton");
+var rootElement = document.documentElement;
+
+function scrollToTop() {
+ 
+  rootElement.scrollTo({
+    top: 800,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);

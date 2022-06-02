@@ -73,7 +73,10 @@ p {
   left: 10px;
  
 }
-/*content element modules / restrictions for mobile needs to be done */
+/*content element modules/
+coz modular szstem are OP, all hail modules !! 
+/ restrictions for mobile needs to be done */
+
 .content-card{
   position: relative;
   margin-left: auto;
@@ -130,6 +133,7 @@ p {
   align-items: center;
   text-align: center;
 }
+/*modules end*/
 
 
 /*media*/
@@ -222,7 +226,6 @@ p {
   margin: 0;
   border-radius: 10px;
   padding: 10px;
- 
   text-align: left;
   background-color: #e9e7deb7;
 
@@ -557,11 +560,88 @@ padding-left: 3vh;
     will-change: transform;
   }
 
-/*Presentation of products*/
-  .presentation{
+/*Presentation of products - thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp*/ 
+
+/* Hide the images by default */
+  .mySlides {
+    display: none;
+}
+
+  .presentation-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-height: 80vh;
+    justify-content: center;
+    overflow: hidden;
 
   }
 
+  .slider{
+    position: relative;
+    height: 50px;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+
+  }
+  .slider-cell{
+    position: relative;
+    width: 90px;
+    height: 8px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #5a5a5a;
+    margin: 10px;
+    transition: background-color 0.6s ease;
+  }
+  .active, .slider-cell:hover {
+    background-color: #717171;
+  }
+
+    /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .present-img{
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 13px;
+  }
+  .present-description{
+    color: #5a5a5a;
+    font-size: 19px;
+    font-family: segoe;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    background-color: #e9e7deb7;
+  }
+  .present-img-description{
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
 
 /*Our programs*/
 

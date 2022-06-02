@@ -58,15 +58,47 @@ function hideOptions(){
     b.style.display = "none";
     c.style.display = "none";
 }
-//scroll down button                      thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
+//scroll down button                thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
 var scrollToTopBtn = document.getElementById("downButton");
 var rootElement = document.documentElement;
 
 function scrollToTop() {
  
   rootElement.scrollTo({
-    top: 800,
+    top: 750,
     behavior: "smooth"
   });
 }
 scrollToTopBtn.addEventListener("click", scrollToTop);
+
+
+// presentation slider              thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp//
+ 
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("slider-cell");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}

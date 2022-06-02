@@ -23,6 +23,7 @@ body,html{margin:0;padding:0;height:100%;}
   margin: 0;
   margin-top: 2vh;
   margin-bottom: 2vh;
+  margin-left: 1rem;
 }
 .headstyle2{
   color: #5a5a5a;
@@ -30,11 +31,18 @@ body,html{margin:0;padding:0;height:100%;}
   font-family: sitka;
   padding: 0;
   margin: 0;
-
+  
 }
+.headstyle3{
+  font-size: 26px;
+  margin: 0;
+}
+
 p {
 
 }
+
+
 .text-cont{
   color: #5a5a5a;
   font-size: 23px;
@@ -65,13 +73,71 @@ p {
   left: 10px;
  
 }
+/*content element modules / restrictions for mobile needs to be done */
+.content-card{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  width: 90%;
+  height: 83vh;
+  border-radius: 40px;
+  align-items: center;
+  background: url(img/sectionback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.content-card-blank{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+  width: 90%;
+  height: 83vh;
+  border-radius: 40px;
+  align-items: center;
+}
+.content-card-frame{
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  background-color: #e9e7deb7;
+  z-index: 1;
+  margin: auto;
+  border-radius: 40px;    
+
+}
+.content-card-frame-blank{
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+  position: relative;
+  width: 100%;
+  height: 83vh;
+  z-index: 1;
+  margin: auto;
+  border-radius: 40px;    
+
+}
+.content-card-head{
+  text-align: left;
+  
+}
+.content-card-nav{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  text-align: center;
+}
+
 
 /*media*/
 
 /*media-mobile*/
 @media only screen and (max-width: 768px) {
  
-  /*navigation-mobile*/
+/*navigation-mobile*/
 
 .header{
   position: sticky;
@@ -332,11 +398,12 @@ padding-left: 3vh;
     color: #616161;   
 }
 
+
 /*featured*/
 .featured-mobile{
   display: none;
 }
-.featured-container{
+#featured-container{
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -349,7 +416,7 @@ padding-left: 3vh;
     background-repeat: no-repeat;
     background-size: cover;  
 }
-.featured{
+#featured{
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
@@ -490,6 +557,11 @@ padding-left: 3vh;
     will-change: transform;
   }
 
+/*Presentation of products*/
+  .presentation{
+
+  }
+
 
 /*Our programs*/
 
@@ -498,9 +570,11 @@ padding-left: 3vh;
     display: grid;
     grid-template-rows: 1fr 4fr;
     top: 12vh;
-    width: 100%;
+    width: 90%;
     height: 85vh;
     margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
     
     
 
@@ -591,43 +665,11 @@ padding-left: 3vh;
 
 /*choose us*/
 
-.chooseus-container{
-    margin: 100px;
-    margin-top: 300px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-   
-    width: 90%;
-    height: 70vh;
-    border-radius: 40px;
-    align-items: center;
-    background: url(img/sectionback.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-}
-.chooseus-color{
-    width: 100%;
-    min-height: 700px;
-    max-height: 800px;
-    height: 82vh;
-    background-color: #e9e7deb7;
-    border-radius: 40px;
-}
-.chooseus-nav-cont{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-}
-.chooseus-head{
-    text-align: center;
-    align-items: center; 
-}
 .chooseus-nav{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
 .chooseus-content{
     display: grid;
     grid-template-columns:  1.3fr 0.9fr 0.9fr;
@@ -692,6 +734,13 @@ padding-left: 3vh;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+.bi-plus{
+  position: relative;
+  display: inherit;
+  margin-top: auto;
+  margin-bottom: auto;
+  top: -50px;
 }
 .prog-it-cont:hover .whitePlus {
   opacity: 0.7;
@@ -761,11 +810,7 @@ padding-left: 3vh;
   font-family: sitka;
  
 }
-.headstyle2{
-  font-size: 26px;
- 
-  margin: 0;
-}
+
 .footercontent{
   text-align: center;
   align-items: center;

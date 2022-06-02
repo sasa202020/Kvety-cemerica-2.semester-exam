@@ -72,7 +72,7 @@ function scrollToTop() {
 scrollToTopBtn.addEventListener("click", scrollToTop);
 
 
-// presentation slider              thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp//
+// presentation slider              thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp
  
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -88,7 +88,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("slider-cell");
   if (n > slides.length) {slideIndex = 1}
@@ -102,3 +101,4 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+// 1) putting in var all sliders 2) getting slider cells elements 3)

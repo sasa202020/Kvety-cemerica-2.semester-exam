@@ -65,7 +65,7 @@ var rootElement = document.documentElement;
 function scrollToTop() {
  
   rootElement.scrollTo({
-    top: 750,
+    top: 620,
     behavior: "smooth"
   });
 }

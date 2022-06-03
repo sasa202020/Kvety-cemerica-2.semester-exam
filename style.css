@@ -337,6 +337,88 @@ padding-left: 3vh;
   transition: 0.7s ease;
  
 }
+/*Presentation of products - thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp*/ 
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.presentation-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-height: 80vh;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.slider{
+  position: relative;
+  height: 50px;
+  grid-column: 1 / 4;
+  grid-row: 2 / 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+.slider-cell{
+  position: relative;
+  width: 90px;
+  height: 8px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #5a5a5a;
+  margin: 10px;
+  transition: background-color 0.6s ease;
+}
+.active, .slider-cell:hover {
+  background-color: #717171;
+}
+
+  /* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.present-img{
+  position: relative;
+  max-width: 80%;
+  max-height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 13px;
+}
+.present-description{
+  color: #5a5a5a;
+  font-size: 19px;
+  font-family: segoe;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: left;
+  background-color: #e9e7deb7;
+}
+.present-img-description{
+  position: relative;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
 }
 
 
@@ -402,7 +484,7 @@ padding-left: 3vh;
 }
 
 
-/*featured*/
+/*featured desktop*/
 #featured-mobile{
   display: none;
 }
@@ -428,7 +510,8 @@ padding-left: 3vh;
     background-color: #e9e7deb7;
     z-index: 1;
     margin: auto;
-    border-radius: 40px;    
+    border-radius: 40px;  
+    
 }
 
 #video-cemerica{
@@ -436,6 +519,7 @@ padding-left: 3vh;
     margin: 0;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    
 }
 .videoframe{
   position: relative;
@@ -449,6 +533,7 @@ padding-left: 3vh;
 .featured-text{
     margin: auto;
     text-align: center;
+    height: 80vh;
     
 }
 
@@ -457,7 +542,7 @@ padding-left: 3vh;
     font-size: 1.8rem;
     font-family: sitka;
     padding: 0;
-    margin: 0;
+    margin: 3vh;
     margin-left: 5vh;
     text-align: left;
 }
@@ -566,18 +651,71 @@ padding-left: 3vh;
   .mySlides {
     display: none;
 }
+  .slide-card-nav{
+    position: relative;
+   
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
 
   .presentation-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+  
+    /*
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     max-height: 80vh;
     justify-content: center;
     overflow: hidden;
+    */
+  }
+  
+  .presentation-content li {
+    height: 40vh;
+    flex-grow: 1;
+    
+   
+    
+  }
+  .present-img{
+    max-height: 95%;
+    min-width: 95%;
+    object-fit: cover;
+    vertical-align: bottom;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .present-description{
+    color: #5a5a5a;
+    font-size: 19px;
+    font-family: segoe;
+    padding: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    text-align: left;
+    background-color: #e9e7deb7;
+  }
+  .present-img-description{
+    position: relative;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
   }
 
+
   .slider{
     position: relative;
+    top: 20px;
     height: 50px;
     grid-column: 1 / 4;
     grid-row: 2 / 2;
@@ -614,34 +752,6 @@ padding-left: 3vh;
   }
 
 
-  .present-img{
-    position: relative;
-    max-width: 80%;
-    max-height: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 13px;
-  }
-  .present-description{
-    color: #5a5a5a;
-    font-size: 19px;
-    font-family: segoe;
-    padding: 0;
-    margin: 0;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    text-align: left;
-    background-color: #e9e7deb7;
-  }
-  .present-img-description{
-    position: relative;
-    max-width: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-  }
 
 /*Our programs*/
 
@@ -742,6 +852,9 @@ padding-left: 3vh;
     transition: 0.7s ease;
    
   }
+  .prog-description p{
+    margin-top: 6vh;
+  }
 
 /*choose us*/
 
@@ -775,7 +888,8 @@ padding-left: 3vh;
   align-items: center;
 }
 .mindsetImg{
-  width:80%
+  width:80%;
+  border-radius: 15px;
 }
 
 

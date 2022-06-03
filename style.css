@@ -201,10 +201,10 @@ coz modular szstem are OP, all hail modules !!
   
 
 }
-.featured{
+#featured{
   display: none;  
 }
-.featured-mobile{
+#featured-mobile{
   position: relative;
   width: 100%;
   margin: auto;   
@@ -403,7 +403,7 @@ padding-left: 3vh;
 
 
 /*featured*/
-.featured-mobile{
+#featured-mobile{
   display: none;
 }
 #featured-container{

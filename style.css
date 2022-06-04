@@ -17,12 +17,12 @@ body,html{margin:0;padding:0;height:100%;}
 }
 .headstyle1{
   color: #5a5a5a;
-  font-size: 40px;
+  font-size: 45px;
   font-family: sitka;
   padding: 0;
   margin: 0;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   margin-left: 1rem;
 }
 .headstyle2{
@@ -69,9 +69,104 @@ p {
   font-family: segoe;
   padding: 0;
   margin: 0;
-  left: 10px;
+  margin-left: 4rem;
  
 }
+
+/*buttons*/
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #3B3B3B;
+  border-radius: 55px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Segoe;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 110px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #3B3B3B;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.info-button {
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #3B3B3B;
+  border-radius: 55px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Segoe;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0px;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 250px;
+  will-change: transform;
+}
+.btn1-light{
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #3B3B3B;
+  border-radius: 55px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Segoe;
+  font-size: 15px;
+  line-height: normal;
+  min-width: 0;
+  outline: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  width: 250px;
+  will-change: transform;
+}
+
 /*content element modules*/
 
 .content-card{
@@ -111,7 +206,7 @@ p {
 }
 .content-card-frame-blank{
   display: grid;
-  grid-template-rows: 1fr 6fr;
+  grid-template-rows: 1fr 10fr;
   position: relative;
   width: 100%;
   height: 83vh;
@@ -144,8 +239,6 @@ p {
     font-family: sitka;
     padding: 0;
     margin: 0;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
     
   }
 
@@ -257,6 +350,7 @@ p {
   top: 0;
   width: 100%;
 }
+
 /*Our programs-mobile*/
 .info-button {
   display: none;
@@ -331,11 +425,12 @@ padding-left: 3vh;
   
 }
 .prog-description{
+  display: none;
   max-width: 80%;
   padding-left: 10%;
   padding-right: 10%;
   font-family: segoe;
-  font-size: 22px;
+  font-size: 15px;
   color: #3B3B3B;
   text-align: center;
   display: flex;
@@ -345,10 +440,8 @@ padding-left: 3vh;
   bottom: 0px;
   left: 0;
   width: 100%;
-  height: 150px;
   opacity: 0;
   display: flex;
-  transition: 0.7s ease;
  
 }
 .middle{
@@ -362,10 +455,10 @@ padding-left: 3vh;
 }
 .slide-card-nav{
   position: relative;
- 
   width: 100%;
   align-items: center;
   text-align: center;
+ 
 }
 
 .presentation-content{
@@ -418,8 +511,7 @@ padding-left: 3vh;
 
 .slider{
   position: relative;
-  top: 20px;
-  height: 50px;
+  top: 0px;
   grid-column: 1 / 4;
   grid-row: 2 / 2;
   display: flex;
@@ -452,6 +544,16 @@ padding-left: 3vh;
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+/*style your wedding-mobile*/
+.styleYourWedding{
+  position: relative;
+  top: 40px;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+
 }
 
 }
@@ -552,6 +654,19 @@ padding-left: 3vh;
     border-radius: 40px;  
     
 }
+/*featured picture desktop*/
+.featuredImg{
+  display: block;
+  position: relative;
+  top: 0;
+  height: 83vh;
+}
+.featuredImgFrame{
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
 
 #video-cemerica{
     position: relative;
@@ -561,11 +676,11 @@ padding-left: 3vh;
     
 }
 .videoframe{
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 56.25%;
-  border-radius: 0 40px 40px 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+    border-radius: 0 40px 40px 0;
 }
 
 
@@ -611,78 +726,6 @@ padding-left: 3vh;
     height: 50px;
   }
 
-/*buttons-desktop*/
-  .button-28 {
-    appearance: none;
-    background-color: transparent;
-    border: 1px solid #3B3B3B;
-    border-radius: 55px;
-    box-sizing: border-box;
-    color: #3B3B3B;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Segoe;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 110px;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 250px;
-    will-change: transform;
-  }
-  
-  .button-28:disabled {
-    pointer-events: none;
-  }
-  
-  .button-28:hover {
-    color: #fff;
-    background-color: #3B3B3B;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
-    transform: translateY(-2px);
-  }
-  
-  .button-28:active {
-    box-shadow: none;
-    transform: translateY(0);
-  }
-  
-  .info-button {
-    appearance: none;
-    background-color: transparent;
-    border: 1px solid #3B3B3B;
-    border-radius: 55px;
-    box-sizing: border-box;
-    color: #3B3B3B;
-    cursor: pointer;
-    display: inline-block;
-    font-family: Segoe;
-    font-size: 25px;
-    font-weight: 600;
-    line-height: normal;
-    margin: 0px;
-    min-height: 60px;
-    min-width: 0;
-    outline: none;
-    padding: 16px 24px;
-    text-align: center;
-    text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 250px;
-    will-change: transform;
-  }
 
 /*Presentation of products - thanks to https://www.w3schools.com/howto/howto_js_slideshow.asp*/ 
 
@@ -781,17 +824,25 @@ padding-left: 3vh;
   }
 
 
+/*style your wedding-desktop*/
+.styleYourWedding{
+  position: relative;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 
-/*Our programs*/
+}
+/*Our programs desktop*/
 
 .programs{
     position: relative;
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 50fr;
     top: 12vh;
     width: 90%;
-    height: 85vh;
-    margin-bottom: 200px;
+    height: 95vh;
+    margin-bottom: 20vh;
     margin-left: auto;
     margin-right: auto;
     
@@ -802,9 +853,8 @@ padding-left: 3vh;
   position: relative;
   top: 20px;
   width: 100%;
-  height: 10vh;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   text-align: center;
   margin-bottom: 30px;
@@ -831,23 +881,22 @@ padding-left: 3vh;
     top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 70%;
+    width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
 }
 .prog-it-cont{  
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    grid-template-rows: 3fr 1fr; 
+    grid-template-rows: 2fr 1.2fr; 
     align-items: center;
     text-align: center;
     width: 100%;
 }
-.prog-it-cont p{
-  text-align: left;
-  align-self: right;
-  padding-left: 3vh;
-}
+
 
 .programs-container img{
     position: relative;
@@ -861,7 +910,7 @@ padding-left: 3vh;
     
   }
   .prog-description{
-    max-width: 80%;
+    height: 100%;
     padding-left: 10%;
     padding-right: 10%;
     font-family: segoe;
@@ -869,20 +918,17 @@ padding-left: 3vh;
     color: #3B3B3B;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 0;
-    width: 100%;
-    height: 150px;
+    position: relative;
     opacity: 0;
     display: flex;
     transition: 0.7s ease;
-   
+  }
+  .prog-it-cont p{
+    text-align: left;
+    align-self: right;
   }
   .prog-description p{
-    margin-top: 6vh;
+    
   }
 
 /*choose us*/
@@ -925,21 +971,13 @@ padding-left: 3vh;
 
 
 /* style for hover effect  // thanks goes to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_opacity */
-/*Adam*/
 
+/*Adam*/
 .prog-it-cont:hover .prog-description{
   opacity: 1;
 }
 
-
-
-
-
-
 /*Aleks*/
-.prog-it-cont {
-  position: relative;
-}
 .program-img {
   opacity: 1;
   display: block;
@@ -963,7 +1001,7 @@ padding-left: 3vh;
   display: inherit;
   margin-top: auto;
   margin-bottom: auto;
-  top: -50px;
+  top: -130px;
 }
 .prog-it-cont:hover .whitePlus {
   opacity: 0.7;

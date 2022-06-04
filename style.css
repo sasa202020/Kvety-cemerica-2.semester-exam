@@ -532,7 +532,9 @@ padding-left: 3vh;
 .presentation-content{
   position: relative;
   width: 90%;
-  left: -3vh;
+  left: 5%;
+  margin-left:auto;
+  margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -541,7 +543,7 @@ padding-left: 3vh;
   margin-right: auto;
   
 }
-.presentation-content li {
+.presentation-content div {
   height: 20vh;
   flex-grow: 1;
   margin-top: 0px;
@@ -554,16 +556,14 @@ padding-left: 3vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  
-  
 }
 .present-description{
   color: #5a5a5a;
   font-size: 14px;
   font-family: segoe;
   padding: 0;
-  margin: 10px;
-  padding: 10px;
+  margin: 0 3vh;
+  padding: 15px;
   border-radius: 10px;
   
   text-align: left;
@@ -616,7 +616,7 @@ padding-left: 3vh;
 /*style your wedding-mobile*/
 .styleYourWedding{
   position: relative;
-  top: 40px;
+  top: 10px;
   width: 100%;
   align-items: center;
   align-content: center;
@@ -639,11 +639,14 @@ padding-left: 3vh;
 .footercontent{
   text-align: center;
   align-items: center;
+  margin: 5px;
 
 }
 .someIcons{
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 25px;
+  margin: 0;
+  padding: 0;
+
 }
 }
 
@@ -845,7 +848,7 @@ padding-left: 3vh;
     margin: 0;
     overflow: hidden;  
   }
-  .presentation-content li {
+  .presentation-content div {
     height: 55vh;
     flex-grow: 1;
     margin-top: 8px;
@@ -1189,10 +1192,6 @@ padding-left: 3vh;
   margin-right: 10px;
 }
 
-/*footer-Mobile */
-@media screen and (max-width: 768px) {
-  
-}
 
 
 /*choose us-Mobile */

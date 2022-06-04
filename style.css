@@ -1074,8 +1074,10 @@ padding-left: 3vh;
   .slider-cell{
     width: 50px;
   }
+}
 @media screen and (min-width: 769px) {
-  .chooseUsMobilePictures, .chooseUsMobileText{
+  .chooseUsMobilePictures, .chooseUsMobileText, .ourWorkplaceMobile, .sliderChooseUs, .ourMindsetMobilePictures
+   .ourPartnersMobile,.ourWorkpalceMobileText{
     display: none;
   }
 

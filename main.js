@@ -58,6 +58,26 @@ function hideOptions(){
     b.style.display = "none";
     c.style.display = "none";
 }
+// Choose us mobile slider
+function chooseusMobileSlider() {
+  var a = document.getElementsByClassName("chooseUsMobileText");
+  var b = document.getElementsByClassName('ourWorkplaceMobile');
+  var c = document.getElementsByClassName('ourPartnersMobile');
+
+a.style.display = "none";
+b.style.display = "none";
+c.style.display = "none";
+
+var x = document.getElementsByClassName(className);
+  x.style.display = "" ;
+}
+function hideOptions(){
+  var b = document.getElementsByClassName('ourWorkplaceMobile');
+  var c = document.getElementsByClassName('ourPartnersMobile');
+
+  b.style.display = "none";
+  c.style.display = "none";
+}
 //scroll down button                thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
 var scrollToTopBtn = document.getElementById("downButton");
 var rootElement = document.documentElement;

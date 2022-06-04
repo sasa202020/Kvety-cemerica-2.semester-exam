@@ -60,13 +60,13 @@ function hideOptions(){
 }
 // Choose us mobile slider
 function chooseusMobileSlider() {
-  var a = document.getElementsByClassName("chooseUsMobileText");
-  var b = document.getElementsByClassName('ourWorkplaceMobile');
-  var c = document.getElementsByClassName('ourPartnersMobile');
+  var z = document.getElementsByClassName("chooseUsMobileText");
+  var x = document.getElementsByClassName('ourWorkplaceMobile');
+  var v = document.getElementsByClassName('ourPartnersMobile');
 
-a.style.display = "none";
-b.style.display = "none";
-c.style.display = "none";
+z.style.display = "none";
+x.style.display = "none";
+v.style.display = "none";
 
 var x = document.getElementsByClassName(className);
   x.style.display = "" ;
@@ -75,7 +75,7 @@ function hideOptions(){
   var b = document.getElementsByClassName('ourWorkplaceMobile');
   var c = document.getElementsByClassName('ourPartnersMobile');
 
-  b.style.display = "none";
+  x.style.display = "none";
   c.style.display = "none";
 }
 //scroll down button                thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/

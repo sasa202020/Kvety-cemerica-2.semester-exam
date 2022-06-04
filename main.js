@@ -1,3 +1,17 @@
+const carousel = {
+  run: function() {
+    $(".carousel__slide:gt(0)").hide();
+    setInterval(function() {
+      $(".carousel__slide:first")
+        .fadeOut(1000)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo(".carousel");
+    }, 5000);
+  }
+};
+carousel.run();
 //changing images on click
 function changeImage1() {
     var image = document.getElementById('testimage');
@@ -120,4 +134,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-// 1) putting in var all sliders 2) getting slider cells elements 3)

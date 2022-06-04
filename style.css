@@ -62,7 +62,7 @@ p {
   text-align: center;
 
 }
-.title1{
+.title1, .title2, .title3{
   position: relative;
   color: #5a5a5a;
   font-size: 25px;
@@ -1043,4 +1043,31 @@ padding-left: 3vh;
 .someIcons{
   margin-left: 10px;
   margin-right: 10px;
+}
+/*choose us mobile */
+@media screen and (max-width: 768px) {
+  .chooseus-content{
+    display: none;
+  }
+  .chooseus-nav{
+    grid-template-columns: 1fr .5fr;
+  }
+  .mindsetPicture1, .mindsetPicture2{
+    width: 44%;
+    
+  }
+  .chooseUsMobilePictures{
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+  }
+ ..chooseUsMobileText{
+  margin-top: 500px;
+ }
+}
+@media screen and (min-width: 769px) {
+  .chooseUsMobilePictures, .chooseUsMobileText{
+    display: none;
+  }
+
 }

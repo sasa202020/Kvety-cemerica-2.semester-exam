@@ -1049,9 +1049,7 @@ padding-left: 3vh;
   .chooseus-content{
     display: none;
   }
-  .chooseus-nav{
-    grid-template-columns: 1fr .5fr;
-  }
+  
   .mindsetPicture1, .mindsetPicture2{
     width: 44%;
     
@@ -1061,10 +1059,21 @@ padding-left: 3vh;
     display: flex;
     justify-content: space-around;
   }
- ..chooseUsMobileText{
-  margin-top: 500px;
- }
-}
+  .chooseUsMobileText{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;    
+  }
+  .sliderChooseUs{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-cell{
+    width: 50px;
+  }
 @media screen and (min-width: 769px) {
   .chooseUsMobilePictures, .chooseUsMobileText{
     display: none;

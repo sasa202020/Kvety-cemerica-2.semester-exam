@@ -1,17 +1,19 @@
-const carousel = {
-  run: function() {
-    $(".carousel__slide:gt(0)").hide();
-    setInterval(function() {
-      $(".carousel__slide:first")
-        .fadeOut(1000)
-        .next()
-        .fadeIn(1000)
-        .end()
-        .appendTo(".carousel");
-    }, 5000);
-  }
-};
-carousel.run();
+//CAROUSEL thanks goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx
+const images = ["img/bouquet1.jpg", "img/bouquet2.jpg", "img/bouquet3.jpg"];
+const carousel = document.querySelector(".carousel");
+const interval = setInterval(function() {
+   startCarousel();
+ }, 3000);
+var index = 1;
+
+startCarousel = () => {
+  carousel.style.backgroundImage = `url(${images[index++]})`;
+  carousel.classList.remove("fade");
+  void carousel.offsetWidth;
+  carousel.classList.add("fade");
+  if(index > images.length - 1) index = 0;
+}
+//CArousel end
 //changing images on click
 function changeImage1() {
     var image = document.getElementById('testimage');

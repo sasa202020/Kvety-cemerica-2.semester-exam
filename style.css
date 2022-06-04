@@ -940,7 +940,7 @@ padding-left: 3vh;
 
 .chooseus-content{
     display: grid;
-    grid-template-columns:  40% 30% 30%;
+    grid-template-columns:  1.3fr 0.9fr 0.9fr;
     margin-top: 20px;
 }
 
@@ -1057,6 +1057,7 @@ padding-left: 3vh;
 }
 .season {cursor: pointer;}
 
+
 /*footer */
 .footer{
   position: relative;
@@ -1114,9 +1115,8 @@ padding-left: 3vh;
 }
 @media screen and (min-width: 769px) {
   .chooseUsMobilePictures, .chooseUsMobileText, .ourWorkplaceMobile, .sliderChooseUs, .ourMindsetMobilePictures
-   .ourPartnersMobile,.ourWorkpalceMobileText, .ourMindsetMobile{
+   .ourPartnersMobile,.ourWorkpalceMobileText{
     display: none;
   }
 
 }
-/* STYLE FOR PRESET PARTS */

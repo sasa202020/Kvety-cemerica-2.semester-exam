@@ -940,7 +940,7 @@ padding-left: 3vh;
 
 .chooseus-content{
     display: grid;
-    grid-template-columns:  1.3fr 0.9fr 0.9fr;
+    grid-template-columns:  40% 30% 30%;
     margin-top: 20px;
 }
 
@@ -1057,28 +1057,6 @@ padding-left: 3vh;
 }
 .season {cursor: pointer;}
 
-/*Carousel for other page */
-.carousel {
-  margin: 0;
-  position: relative;
-  width: 100%;
-  height: 900px;
-  .carousel__slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    .slide__image {
-      position: absolute;
-      top: -4rem;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-    }
-  }
-} 
-
 /*footer */
 .footer{
   position: relative;
@@ -1136,8 +1114,9 @@ padding-left: 3vh;
 }
 @media screen and (min-width: 769px) {
   .chooseUsMobilePictures, .chooseUsMobileText, .ourWorkplaceMobile, .sliderChooseUs, .ourMindsetMobilePictures
-   .ourPartnersMobile,.ourWorkpalceMobileText{
+   .ourPartnersMobile,.ourWorkpalceMobileText, .ourMindsetMobile{
     display: none;
   }
 
 }
+/* STYLE FOR PRESET PARTS */

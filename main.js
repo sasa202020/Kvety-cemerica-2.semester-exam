@@ -59,24 +59,24 @@ function hideOptions(){
     c.style.display = "none";
 }
 // Choose us mobile slider
-function chooseusMobileSlider() {
-  var z = document.getElementsByClassName("chooseUsMobileText");
-  var x = document.getElementsByClassName('ourWorkplaceMobile');
-  var v = document.getElementsByClassName('ourPartnersMobile');
+function myFunction(id) {
+  var q = document.getElementById(4);
+  var w = document.getElementById(5);
+  var e = document.getElementById(6);
 
-z.style.display = "none";
-x.style.display = "none";
-v.style.display = "none";
+q.style.display = "none";
+w.style.display = "none";
+e.style.display = "none";
 
-var x = document.getElementsByClassName(className);
-  x.style.display = "" ;
+var y = document.getElementById(id);
+  y.style.display = "";
 }
 function hideOptions(){
-  var b = document.getElementsByClassName('ourWorkplaceMobile');
-  var c = document.getElementsByClassName('ourPartnersMobile');
+  var w = document.getElementById(5);
+  var e = document.getElementById(6);
 
-  x.style.display = "none";
-  c.style.display = "none";
+  w.style.display = "none";
+  e.style.display = "none";
 }
 //scroll down button                thanks to https://css-tricks.com/how-to-make-an-unobtrusive-scroll-to-top-button/
 var scrollToTopBtn = document.getElementById("downButton");

@@ -8,7 +8,7 @@
     src: url(fonts/Segoe\ UI.ttf);
     
 }
-/*elements*/
+/*elements desktop*/
 body,html{margin:0;padding:0;height:100%;}
 
 .vl {
@@ -41,7 +41,6 @@ body,html{margin:0;padding:0;height:100%;}
 p {
 
 }
-
 .text-cont{
   color: #5a5a5a;
   font-size: 23px;
@@ -240,13 +239,43 @@ p {
 /*media-mobile*/
 @media only screen and (max-width: 768px) {
 
+/*headstyles-mobile*/
+
   .headstyle1{
     color: #5a5a5a;
     font-size: 25px;
     font-family: sitka;
     padding: 0;
+    margin: 0; 
+  }
+  .headstyle2{
+    color: #5a5a5a;
+    font-size: 15px;
+    font-family: sitka;
+    padding: 0;
+    margin: 0; 
+  }
+  .headstyle3{
+    font-size: 15px;
     margin: 0;
-    
+  }
+  .text-cont{
+    color: #5a5a5a;
+    font-size: 23px;
+    font-family: segoe;
+    padding: 0;
+    margin: 0;
+    margin-left: 5vh;
+    text-align: left;
+  }
+  .text-cont2{
+    color: #5a5a5a;
+    font-size: 15px;
+    font-family: segoe;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
   }
   .btn1-light{
     appearance: none;
@@ -481,39 +510,51 @@ padding-left: 3vh;
 .mySlides {
   display: none;
 }
+.slideshow{
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8vh;
+}
+.slide-card{
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;   
+}
 .slide-card-nav{
   position: relative;
   width: 100%;
   align-items: center;
   text-align: center;
- 
 }
-
 .presentation-content{
   position: relative;
+  width: 90%;
+  left: -3vh;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   overflow: hidden;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
   
- 
 }
-
 .presentation-content li {
- 
+  height: 20vh;
   flex-grow: 1;
+  margin-top: 0px;
 }
 .present-img{
-  max-height: 95%;
-  min-width: 95%;
+  max-height: 98%;
+  min-width: 98%;
   object-fit: cover;
-  vertical-align: bottom;
-  border-radius: 15px;
+  border-radius: 8px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  
   
 }
 .present-description{
@@ -537,7 +578,6 @@ padding-left: 3vh;
 
 }
 
-
 .slider{
   position: relative;
   top: 0px;
@@ -547,8 +587,6 @@ padding-left: 3vh;
   flex-direction: row;
   align-items: center;
   justify-content: center;
- 
-
 }
 .slider-cell{
   position: relative;
@@ -560,8 +598,6 @@ padding-left: 3vh;
   border-color: #5a5a5a;
   margin: 10px;
   transition: background-color 0.6s ease;
-  
-
 }
 .active, .slider-cell:hover {
   background-color: #717171;
@@ -585,11 +621,31 @@ padding-left: 3vh;
   align-items: center;
   align-content: center;
   text-align: center;
-
+}
+/*Footer-mobile*/
+.footer{
+  position: relative;
+  width: 100%;
+  background-color: #ffffff57;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  grid-template-rows: .1fr 1fr;
+  align-items: center;
+  font-family: sitka; 
+  font-size: 9px;
 }
 
-}
+.footercontent{
+  text-align: center;
+  align-items: center;
 
+}
+.someIcons{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+}
 
 /*media-desktop*/
 @media only screen and (min-width: 768px) {
@@ -699,7 +755,7 @@ padding-left: 3vh;
   height: 100%;
 
 }
-/*featured picture desktop end*/
+/*featured picture-Desktop end*/
 
 #video-cemerica{
     position: relative;
@@ -776,24 +832,19 @@ padding-left: 3vh;
   }
   .slide-card{
     display: grid;
-
-
   }
   .slide-card-nav{
     position: relative;
     width: 100%;
     align-items: center;
     text-align: center;
-}
-
+  }
   .presentation-content{
     display: flex;
     flex-wrap: wrap;
     margin: 0;
-    overflow: hidden;
-    
+    overflow: hidden;  
   }
-  
   .presentation-content li {
     height: 55vh;
     flex-grow: 1;
@@ -879,7 +930,7 @@ padding-left: 3vh;
   }
 
 
-/*style your wedding-desktop*/
+/*style your wedding-Desktop*/
 .styleYourWedding{
   position: relative;
   top: 50px;
@@ -889,7 +940,7 @@ padding-left: 3vh;
   text-align: center;
 
 }
-/*Our programs desktop*/
+/*Our programs-Desktop*/
 
 .programs{
     position: relative;
@@ -987,7 +1038,7 @@ padding-left: 3vh;
     
   }
 
-/*choose us*/
+/*choose us-Desktop*/
 
 .chooseus-nav{
   display: grid;
@@ -1114,7 +1165,7 @@ padding-left: 3vh;
 .season {cursor: pointer;}
 
 
-/*footer */
+/*footer-Desktop */
 .footer{
   position: relative;
   width: 100%;
@@ -1124,8 +1175,7 @@ padding-left: 3vh;
   text-align: center;
   grid-template-rows: .1fr 1fr;
   align-items: center;
-  font-family: sitka;
- 
+  font-family: sitka; 
 }
 
 .footercontent{
@@ -1138,7 +1188,14 @@ padding-left: 3vh;
   margin-left: 10px;
   margin-right: 10px;
 }
-/*choose us mobile */
+
+/*footer-Mobile */
+@media screen and (max-width: 768px) {
+  
+}
+
+
+/*choose us-Mobile */
 @media screen and (max-width: 768px) {
   .chooseus-content{
     display: none;

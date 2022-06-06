@@ -16,11 +16,11 @@
     <!--Link to css sheet-->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleForPresets.css" />
-
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <title>Kvety Cemerica</title>
   </head>
   <body>
+    <script src="presetPreview.js"></script>
     <style>
       a:link {
         text-decoration: none;
@@ -75,13 +75,89 @@
 
       <hr size="2" height="10px" color="black" />
     </header>
+    <!--DESKTOP VERSION-->
+    <div id="featured-container">
+      <section id="presetPreview">
+        <div id="featured">
+          <dl class="featured-text">
+            <p class="featured-inspired">Get inspired</p>
+            <hr width="90%" />
+            <p id="inspiration">Wedding inspiration</p>
+            <p class="inspired">
+              loremipsum Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nam reprehenderit culpa facere temporibus animi debitis
+              iusto magni esse officia obcaecati, saepe ea a modi odio cumque,
+              vitae accusantium. Officia, ipsa!
+            </p>
+            <button class="button-28" id="downButton">Show more</button>
+          </dl>
+          <div class="">
+            <img class="mySlides2" src="img/bouquet1.jpg" />
+            <img class="mySlides2" src="img/bridesmatesdecoration2.jpg" />
+            <img class="mySlides2" src="img/buttonholes1.jpg" />
+            <div class="" style="width: 100%">
+              <div class="slider-cell" onclick="currentDiv(1)"></div>
+              <div class="slider-cell" onclick="currentDiv(2)"></div>
+              <div class="slider-cell" onclick="currentDiv(3)"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="gridPresetPreviewDesktop">
+      <a href=""></a>
+      <section class="presetOptions">
+        <p>Bouquet for bride</p>
+        <p>Feather for wedding guests</p>
+        <p>Wedding hall decorations</p>
+        <p>Church decorations</p>
+        <p>Car decorations</p>
+        <p>Bridesmaids decorations</p>
+        <p>Other decorations</p>
+      </section>
+      <section>
+        <img class="presetPictureMobile" src="img/bouquet3.jpg" alt="" />
+      </section>
+      <section>
+        <img class="presetPictureMobile" src="img/bouquet2.jpg" alt="" />
+      </section>
+    </section>
     <!-- MANGE TAK for carousel goes to https://www.youtube.com/watch?v=KtsVC_JRxCU&ab_channel=codefoxx-->
     <div class="carousel fade"></div>
-    <h1>Preset parts</h1>
+    <section class="presetPartsTextMobile">
+      <h1>Preset parts</h1>
+    </section>
+    <!-- part1-->
     <section class="bouquetePart">
-      <h2 class="">Bouquete for pride</h2>
+      <h2>Bouquete for bride</h2>
 
       <img class="shownProduct" src="img/bouquet2.jpg" alt="" />
+      <h3></h3>
+      <section>
+        <h4>Possible options</h4>
+        <p class="possibleOptionsText">
+          You will be able to choose from different bouquet sizes
+        </p>
+      </section>
+    </section>
+    <!-- part2-->
+    <section class="bouquetePart">
+      <h2>Bouquete for bride2</h2>
+
+      <img class="shownProduct" src="img/bouquet3.jpg" alt="" />
+      <h3></h3>
+      <section>
+        <h4>Possible options</h4>
+        <p class="possibleOptionsText">
+          You will be able to choose from different bouquet sizes
+        </p>
+      </section>
+    </section>
+    <!--part3-->
+    <section class="bouquetePart">
+      <h2>3Bouquete for bride</h2>
+
+      <img class="shownProduct" src="img/bouquet1.jpg" alt="" />
       <h3></h3>
       <section>
         <h4>Possible options</h4>
@@ -99,15 +175,18 @@
       <div class="slider-cell"></div>
       <div class="slider-cell"></div>
     </section>
-
+    <section class="navigationButtons">
+      <button class="prevStep"><a href="#">Previous step</a></button>
+      <button class="nextStep"><a href="#">Next step</a></button>
+    </section>
     <!--Footer-->
     <footer class="footer">
-      <p class="headstyle3">Contact</p>
-      <p class="headstyle3">Social Media</p>
+      <h5>Contact</h5>
+      <h5>Social Media</h5>
 
       <div class="footercontent">
         <p class="text-cont2">+421 915 548 878</p>
-        <p class="text-cont2">kvetycemerica@gmail.com</p>
+        <p class="text-cont2">kvetycemerica@<br />gmail.com</p>
       </div>
 
       <div class="footercontent">
@@ -146,9 +225,10 @@
     </footer>
     <section class="boringInfo">
       <a href="#">Privacy policy</a>
-      <a href="#">Terms of use</a>
+      <a class="termsOfUse" href="#">Terms of use</a>
       <a href="#">Cookie policy</a>
     </section>
     <script src="main.js"></script>
+    <script src="presetPreview.js"></script>
   </body>
 </html>

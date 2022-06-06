@@ -616,7 +616,8 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  #featured {
+  #featured,
+  #presetPreview {
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;

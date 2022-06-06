@@ -157,3 +157,9 @@ h5 {
 }
 .presetOptions {
 }
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}

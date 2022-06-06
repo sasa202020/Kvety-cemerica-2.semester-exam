@@ -112,12 +112,12 @@ function plusSlides(n) {
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
+function currentSlide(n, sName) {
+  showSlides((slideIndex = n), sName);
 }
 
-function showSlides(n) {
-  let slides = document.getElementsByClassName("mySlides");
+function showSlides(n, sName) {
+  let slides = document.getElementsByClassName(sName);
   let dots = document.getElementsByClassName("slider-cell");
   if (n > slides.length) {
     slideIndex = 1;

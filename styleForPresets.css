@@ -1,0 +1,217 @@
+html {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+}
+* {
+  color: #5a5a5a;
+  font-family: sitka;
+}
+h1 {
+  margin-left: 5%;
+}
+h2 {
+  margin-left: 8%;
+  border-bottom: 2px solid currentColor;
+  width: 250px;
+}
+h3 {
+}
+h4 {
+  margin-left: 5%;
+  margin-bottom: 0%;
+  border-bottom: 2px solid currentColor;
+  width: 150px;
+}
+h5 {
+  font-size: 24px;
+}
+.possibleOptionsText {
+  width: 250px;
+
+  margin-left: 13%;
+  margin-top: 10px;
+  margin-left: 8%;
+}
+.sliderButtons {
+  display: flex;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.shownProduct {
+  display: flex;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* NAVIGATION BUTTONS*/
+.navigationButtons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+.nextStep {
+  background-color: white;
+  border-color: #5a5a5a;
+  border-radius: 20px;
+}
+.prevStep {
+  margin-right: 30%;
+  background-color: white;
+  border-color: #5a5a5a;
+  border-radius: 20px;
+}
+/*FOOTER*/
+.boringInfo {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.text-cont2 {
+  font-size: 20px;
+}
+.termsOfUse {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.headingsFooterDesktop {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: -30px;
+}
+.footerDesktopFlex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+/*fix for flexboxdesktop*/
+.contactFlexFix {
+  width: 252px;
+  text-align: center;
+}
+.someFlexFix {
+  width: 162px;
+  margin-right: 100px;
+  text-align: center;
+}
+.emptyFlexFix {
+  width: 114;
+}
+.iconsDesktop {
+  align-items: center;
+  margin-top: 32px;
+}
+/* CAROUSEL*/
+.carousel {
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(img/bouquet1.jpg);
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-cell {
+    margin: 6px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr;
+    background-image: url(img/sectionback.jpg);
+    background-size: cover;
+    margin-top: 20px;
+  }
+  .someIcons {
+    margin-left: 0;
+  }
+}
+/* hiding mobile elements for Making desktop ver */
+@media screen and (min-width: 769px) {
+  .carousel,
+  .presetPartsTextMobile,
+  .sliderButtons,
+  .shownProduct,
+  .bouquetePart,
+  .footer,
+  .boringInfo {
+    /*this shit is overlapping somewhere */
+    display: none;
+  }
+  .bouquetePart {
+    visibility: hidden;
+  }
+} /*  hiding DEsktop elements for  phone version*/
+@media screen and (max-width: 768px) {
+  .gridPresetPreviewDesktop,
+  .presetOptions,
+  .presetPictureMobile,
+  footer {
+    display: none;
+  }
+  .btn1-light {
+    width: 140px;
+  }
+}
+.mySlides2 {
+  max-height: 500px;
+}
+.gridPresetPreviewDesktop {
+  margin-top: 80px; /* FIX THIS LATER*/
+  display: grid;
+  width: 100%;
+  grid-template-columns: 10% 23% 33% 33%;
+  grid-template-rows: 1fr;
+}
+.presetPictureMobile {
+  width: 80%;
+}
+.presetOptions {
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+.slideShowPreset {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.white-cell {
+  border-color: white;
+}
+.white-cell:hover {
+  background-color: white;
+}

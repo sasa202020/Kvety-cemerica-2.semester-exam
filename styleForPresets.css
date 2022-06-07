@@ -79,6 +79,35 @@ h5 {
   margin-left: 8px;
   margin-right: 8px;
 }
+.headingsFooterDesktop {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: -30px;
+}
+.footerDesktopFlex {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  text-align: center;
+}
+/*fix for flexboxdesktop*/
+.contactFlexFix {
+  width: 252px;
+  text-align: center;
+}
+.someFlexFix {
+  width: 162px;
+  margin-right: 100px;
+  text-align: center;
+}
+.emptyFlexFix {
+  width: 114;
+}
+.iconsDesktop {
+  align-items: center;
+  margin-top: 32px;
+}
 /* CAROUSEL*/
 .carousel {
   width: 100%;
@@ -127,19 +156,31 @@ h5 {
     margin-left: 0;
   }
 }
-/* Making desktop ver of presets page*/
+/* hiding mobile elements for Making desktop ver */
 @media screen and (min-width: 769px) {
   .carousel,
   .presetPartsTextMobile,
   .sliderButtons,
   .shownProduct,
-  .bouquetePart {
+  .bouquetePart,
+  .footer,
+  .boringInfo {
+    /*this shit is overlapping somewhere */
     display: none;
   }
-} /* hiding phone elements*/
+  .bouquetePart {
+    visibility: hidden;
+  }
+} /*  hiding DEsktop elements for  phone version*/
 @media screen and (max-width: 768px) {
-  .gridPresetPreviewDesktop {
+  .gridPresetPreviewDesktop,
+  .presetOptions,
+  .presetPictureMobile,
+  footer {
     display: none;
+  }
+  .btn1-light {
+    width: 140px;
   }
 }
 .mySlides2 {
@@ -162,4 +203,15 @@ a:hover {
 }
 a:active {
   text-decoration: none;
+}
+.slideShowPreset {
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+.white-cell {
+  border-color: white;
+}
+.white-cell:hover {
+  background-color: white;
 }

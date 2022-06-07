@@ -204,6 +204,12 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+.activeHover {
+  cursor: pointer;
+  text-decoration: underline;
+  border-radius: 5px;
+  border-color: #5a5a5a;
+}
 .slideShowPreset {
   margin-top: -40px;
   display: flex;

@@ -83,7 +83,10 @@ p {
   width: 100%;
   height: 2vh;
 }
-
+.spacer2{
+  width: 100%;
+  height: 20vh;
+}
 /*buttons*/
 .button-28 {
   appearance: none;
@@ -1150,8 +1153,6 @@ p {
   opacity: 1;
 }
 /* end style for hover effect*/
-}
-
 
 
 /*test function imagechange*/
@@ -1199,6 +1200,7 @@ p {
 .someIcons{
   margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
 }
 
 
